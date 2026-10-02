@@ -1,0 +1,20 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
+    "lib": ["ES2023", "DOM"],
+    "types": ["node"]
+  },
+  "include": [
+    "vite.config.ts",
+    "vitest.config.ts",
+    "playwright.config.ts",
+    "tools/**/*.ts",
+    "tests/api/**/*.ts",
+    "tests/e2e/**/*.ts",
+    "tests/visual/**/*.ts",
+    "tests/helpers/backend.ts",
+    "src/types/**/*.ts"
+  ],
+  "exclude": ["src/**/*.spec.ts"]
+}
